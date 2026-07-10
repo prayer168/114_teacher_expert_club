@@ -121,6 +121,7 @@ A6 = "1-IEbthVsZxctqCNWubGbnLuyFaUHWDWY 1eEXOrkivdUKrGIN94g5DI6ob8RK6gBYy".split
 R  = "1w1jEh5NY0WYk7MC5DV0Yz96P7iYnID2k 1-0jNAO0G27aXNjUt5EJPoa3R6j3WhnCi 1gSHMCs7oJVnzCqPBa3l_RlNn12F0hzg4 1GQzxzIac7flU0SHNP1RMSlk_lTDLc75P 1-EFPNZaHaQT9khZbedPVqBTJxnSNdQsc 1Jml9RG0QOXqcZ0wxQ_m31ok2CS919UkB".split()
 P1 = "1fZzASVo2h7b7OCB9u2EFiCEi1Ambr_C8 1bGaoVrYOJSWXgoS1BkRXZYByLue-_vZQ 1r4asgjiMl_fkR1RYEbFJEFCXM3J8r3bC 1TRr8lEK4S4UQOaYPLk2vDQaYTylXUxvA 1lZBAV8oPeJpmxq1RvmBUk39qWOiVdn-m 10DNYZWa96PiFfIUTYvZY2vHB0_a_VsAF".split()
 P2 = "1vW0JMnbkLenu34iDGPpz3ESNqk3wyUtH 1_ohrMatXiVCseK38AjL8XW7QisI1Iw20 12hZ14KKKX_9hFejX9PnygYOeY4KBs4Fb 1QEHtNeOq7LQBwaF9UFA7skE8X3bx7wDI 1Ln4vuWM9AMIOgtkDMM6MMNDp0NKXAg7c 1VmX36EMx2GSbGLO-zeu3_CY1-WA6fekU".split()
+R2 = "13qBzmqb5WX8C2slijhOBulV3zedD55sp 1BN5B2_jpE3dQ0xfJH5Lu0ecTpuF4-lax 1GEV-K1vbiRVKYPBmqPFSsOEFW4dNfFBZ 1ABl8tUYR0vYr3hbtuumWXDr9yHOF2mE5 1I7uTtDgpCQiBt-qgydOZ9-obetZF8JZC 1_dFR0SobnSz9p1_1jYGv4hYfW6HTZybo".split()
 
 # ---------------- 建立文件 ----------------
 doc = Document()
@@ -174,7 +175,8 @@ rows_data = [
     ("4", "115/02/25", "第四次社聚—艾草的生活應用與栽種", "艾草的生活應用與栽種實作", "陳賢宗", "國小部自然教室一"),
     ("5", "115/03", "第五次社聚—秋葵的生活應用與栽種", "秋葵育苗、栽種與飲食應用", "陳賢宗", "國小部自然教室一"),
     ("6", "線上", "第六次社聚—開心農場數位互動教材的應用", "線上會議：數位互動教材融入食農教學", "陳賢宗", "線上會議"),
-    ("研習", "115/05/20", "昆蟲旅館研習", "昆蟲旅館設置與校園生態多樣性研習", "陳賢宗", "國小部自然教室一"),
+    ("研習一", "115/05/20", "昆蟲旅館研習", "昆蟲旅館設置與校園生態多樣性研習", "陳賢宗", "國小部自然教室一"),
+    ("研習二", "115/06/03", "枝葉園圃研習", "校園枝葉園圃規劃、維護與綠美化研習", "陳賢宗", "南科實小枝葉園圃"),
     ("公開授課一", "114/11/07", "Rebecca 老師公開授課", "教師公開授課（含備、觀、議課）", "Rebecca 老師", "國小部教室"),
     ("公開授課二", "115/05/12", "公開授課", "教師公開授課（含備、觀、議課）", "本社群教師", "國小部教室"),
 ]
@@ -219,11 +221,15 @@ activity(doc, "第六次社聚—開心農場數位互動教材的應用（線�
          "提升學生學習動機。", A6, cols=2, width=7.0)
 
 # 四、研習
-add_heading_bar(doc, "肆、自辦研習—昆蟲旅館研習")
-activity(doc, "昆蟲旅館研習",
+add_heading_bar(doc, "肆、自辦研習")
+activity(doc, "研習一—昆蟲旅館研習",
          "時間：115年5月20日　地點：國小部自然教室一",
          "帶領教師認識昆蟲旅館的功能與設置方式，透過實作提升校園生態多樣性，"
          "並培養教師將生態議題融入教學的能力。", R)
+activity(doc, "研習二—枝葉園圃研習",
+         "時間：115年6月3日　地點：南科實小枝葉園圃",
+         "於校園枝葉園圃進行綠美化與栽植維護研習，帶領教師規劃與整理園圃空間，"
+         "結合自然、食農與環境教育，打造可供教學應用的校園生態場域。", R2)
 
 # 五、公開授課
 add_heading_bar(doc, "伍、公開授課紀錄（備、觀、議課）")
@@ -239,7 +245,7 @@ activity(doc, "公開授課二",
 add_heading_bar(doc, "陸、結語")
 para(doc,
      "本學年度「南科綠手指」教師專業學習社群以香草、橡實、艾草、秋葵等植物為主軸，"
-     "結合六次社聚、昆蟲旅館研習及兩場公開授課，將自然、食農與環境教育融入教學現場。"
+     "結合六次社聚、昆蟲旅館研習、枝葉園圃研習及兩場公開授課，將自然、食農與環境教育融入教學現場。"
      "透過教師共同備課、觀課與議課，不僅提升教師專業知能與教學媒材研發能力，"
      "也豐富了校園植物與生態的多樣性，落實環境教育並回饋於學生學習。未來將持續深化社群運作，"
      "開發更多跨領域教學資源，並將成果與校內外教師分享。", size=12)
